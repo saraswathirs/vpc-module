@@ -13,12 +13,12 @@ variable "VPC_TAG" {
 variable "VPC_ID" {}
 
 variable "PUBLIC_SUBNET_CIDR_BLOCKS" {
-  type    = "string"
+  type    = string
   default = "10.0.1.0/24"
 }
 
 variable "PUBLIC_SUBNET_TAGS" {
-  type    = "string"
+  type    = string
   default = "TestVPC-Public-1A"
 }
 
@@ -33,23 +33,23 @@ variable "INTERNET_GATEWAY_TAG" {
 variable "INTERNET_GATEWAY_ID" {}
 
 variable "AZS" {
-  type    = "string"
+  type    = string
   default = "ap-south-1a"
 }
 
 variable "PUBLIC_ROUTE_TABLE_ID" {}
 
 variable "PUBLIC_SUBNET_ID" {
-  type = "string"
+  type = string
 }
 
 variable "PRIVATE_SUBNET_CIDR_BLOCKS" {
-  type    = "string"
+  type    = string
   default = "10.0.3.0/24"
 }
 
 variable "PRIVATE_SUBNET_TAGS" {
-  type    = "string"
+  type    = string
   default = "TestVPc-Private-1A"
 }
 
@@ -71,7 +71,7 @@ variable "PRIVATE_ROUTE_TABLE_TAG" {
 }
 
 variable "PRIVATE_SUBNET_ID" {
-  type = "string"
+  type = string
 }
 
 variable "PRIVATE_ROUTE_TABLE_ID" {}
