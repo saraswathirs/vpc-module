@@ -13,13 +13,13 @@ variable "VPC_TAG" {
 variable "VPC_ID" {}
 
 variable "PUBLIC_SUBNET_CIDR_BLOCKS" {
-  type    = "list"
-  default = ["10.0.1.0/24", "10.0.2.0/24"]
+  type    = "string"
+  default = "10.0.1.0/24"
 }
 
 variable "PUBLIC_SUBNET_TAGS" {
-  type    = "list"
-  default = ["TestVPC-Public-1A", "TestVPC-Public-1B"]
+  type    = "string"
+  default = "TestVPC-Public-1A"
 }
 
 variable "PUBLIC_ROUTE_TABLE_TAG" {
@@ -33,24 +33,24 @@ variable "INTERNET_GATEWAY_TAG" {
 variable "INTERNET_GATEWAY_ID" {}
 
 variable "AZS" {
-  type    = "list"
-  default = ["ap-south-1a", "ap-south-1b"]
+  type    = "string"
+  default = "ap-south-1a"
 }
 
 variable "PUBLIC_ROUTE_TABLE_ID" {}
 
 variable "PUBLIC_SUBNET_ID" {
-  type = "list"
+  type = "string"
 }
 
 variable "PRIVATE_SUBNET_CIDR_BLOCKS" {
-  type    = "list"
-  default = ["10.0.3.0/24", "10.0.4.0/24"]
+  type    = "string"
+  default = "10.0.3.0/24"
 }
 
 variable "PRIVATE_SUBNET_TAGS" {
-  type    = "list"
-  default = ["TestVPc-Private-1A", "TestVPC-Private-1B"]
+  type    = "string"
+  default = "TestVPc-Private-1A"
 }
 
 variable "EIP_TAG" {
@@ -71,7 +71,7 @@ variable "PRIVATE_ROUTE_TABLE_TAG" {
 }
 
 variable "PRIVATE_SUBNET_ID" {
-  type = "list"
+  type = "string"
 }
 
 variable "PRIVATE_ROUTE_TABLE_ID" {}
